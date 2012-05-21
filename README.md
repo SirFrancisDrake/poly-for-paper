@@ -23,7 +23,8 @@ What works:
         goes on using first substitution until fixed point, then goes on with the second etc.  
     2. ``` clips :: [(Polynomial -> Polynomial)] -> Polynomial -> Polynomial ```  
         goes on with the first one until fixed point, applies the second one, tries the first one etc.  
-    example: [ "x" -> "z"  
+    example:  
+    [ "x" -> "z"  
              , "y" -> "x + z"  
              ] on polynomial "x + y + z"  
         cLIPSnaive: "x + y + z" {first subst}-> "y + 2z"   
